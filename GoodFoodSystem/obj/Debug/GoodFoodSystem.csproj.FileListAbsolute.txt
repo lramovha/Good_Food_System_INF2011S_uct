@@ -1,0 +1,40 @@
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.Properties.Resources.resources
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe.config
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.pdb
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.exe
+C:\Users\Admin\Desktop\2022Workshops\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.pdb
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe.config
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.pdb
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.Properties.Resources.resources
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.exe
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\srartingFile\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.pdb
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe.config
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.pdb
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.Properties.Resources.resources
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.exe
+C:\Users\Admin\Desktop\2022Workshops\Workshop 2\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.pdb
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe.config
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.exe
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\bin\Debug\GoodFoodSystem.pdb
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.AssemblyReference.cache
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.Properties.Resources.resources
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.GenerateResource.cache
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.csproj.CoreCompileInputs.cache
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.exe
+C:\Users\lasyr\Desktop\ZaLes\School\INF2011S\Workshop2PrepSolution\Workshop2PrepSolution\GoodFoodSystem\GoodFoodSystem\obj\Debug\GoodFoodSystem.pdb
