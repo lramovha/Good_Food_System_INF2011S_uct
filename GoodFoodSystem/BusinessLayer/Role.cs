@@ -9,10 +9,10 @@ namespace GoodFoodSystem.BusinessLayer
     public class Role
     {
         /*The Role class will have a role description(description) and the role ID(roleval) 
-            * which can either be: runner, headwaitron, waitron or simply no role.
-            * These data members could be reused by the child classes, 
-            * so be mindful of the protection rights you give them.
-            */
+    * which can either be: runner, headwaitron, waitron or simply no role.
+    * These data members could be reused by the child classes, 
+    * so be mindful of the protection rights you give them.
+    */
 
         #region Data Member
         public enum RoleType
@@ -75,5 +75,6 @@ namespace GoodFoodSystem.BusinessLayer
         }
 
         #endregion
+
     }
 }

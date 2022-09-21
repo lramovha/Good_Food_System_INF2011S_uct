@@ -6,58 +6,60 @@ using System.Threading.Tasks;
 
 namespace GoodFoodSystem.BusinessLayer
 {
-    internal class Runner : Role
+    public class Runner:Role
     {
-        #region Data Members
+        #region Data Member
         //encapsulation
-        protected decimal tips;
-        protected decimal rate;
-        protected decimal noOfShifts;
+        private decimal tips, rate;
+        private int NumberOfShifts;
         #endregion
 
-        #region Property methods
-        public decimal Tips
+        #region Property Methods
+        public decimal getTips
         {
             get { return tips; }
             set { tips = value; }
         }
 
-        public decimal Rate 
+        public decimal getRate
         {
             get { return rate; }
             set { rate = value; }
-        }
 
-        public decimal NoOfShifts 
+        }
+        public int getShifts
         {
-            get { return noOfShifts; }
-            set { noOfShifts = value; }
+            get { return NumberOfShifts; }
+            set { NumberOfShifts = value; }
         }
         #endregion
 
-        #region Constructor
-        public Runner()
+        #region Constructors
+        public Runner() : base()
         {
-            tips = 0;
-            rate = 0;
-            noOfShifts = 0;
-            roleVal = RoleType.Runner;
+            getRoleValue = RoleType.Runner;
             description = "Runner";
+            getShifts = 0;
+            rate = 0;
+            tips = 0;
         }
         #endregion
-
 
         #region Methods
 
         public override decimal Payment()
         {
-            return rate * noOfShifts;
+            //Will be calculated when shifts are available
+            return rate * getShifts;
         }
 
-        public override decimal Payment(decimal noOfips)
+        public override decimal Payment(decimal tipsVal)
         {
-            return rate * noOfShifts + tips;
+            tips = tipsVal;  //*** I assume that the tips will be sent to the runner
+            //Will be calculated when shifts are available
+            return rate * getShifts + tips;
         }
         #endregion
+
     }
 }

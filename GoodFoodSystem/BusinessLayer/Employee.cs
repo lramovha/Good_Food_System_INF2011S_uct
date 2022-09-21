@@ -23,6 +23,7 @@ namespace GoodFoodSystem.BusinessLayer
         #region Data Members
         //encapsulation
         private string empId;
+        //need to define a role here - Question 3-Make sure the role data member of this class is of class type Role.
         private Role role;
         #endregion
 
@@ -35,12 +36,25 @@ namespace GoodFoodSystem.BusinessLayer
         #endregion
 
         #region Constructor
-        public Employee(Role roleValue)
+        /*
+         * Include the constructor of the class.                                                                                                           
+            The constructor should have one argument roleValue of type Role. 
+            This is because upon the invocation of this class, the role of the employee should be determined.
+            Use a switch statement to find the specific role as follows (for more on switch statements):
+            If there is no role yet, then:                  role = new Role ();
+            If the role is Headwaiter, then:                     role = new HeadWaiter ();
+
+         */
+
+        public Employee(Role.RoleType roleValue)
         {
-            switch (roleValue.getRoleValue) 
+            switch (roleValue)
             {
+                case Role.RoleType.NoRole:
+                    role = new Role();
+                    break;
                 case Role.RoleType.Headwaiter:
-                    role = new Headwaiter();
+                    role = new HeadWaiter();
                     break;
                 case Role.RoleType.Waiter:
                     role = new Waiter();
@@ -48,11 +62,9 @@ namespace GoodFoodSystem.BusinessLayer
                 case Role.RoleType.Runner:
                     role = new Runner();
                     break;
-                default:
-                    role = new Role();
-                    break;
             }
         }
         #endregion
+
     }
 }

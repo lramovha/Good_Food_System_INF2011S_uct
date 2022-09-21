@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace GoodFoodSystem.BusinessLayer
 {
-    public class Headwaiter : Role
+    public class HeadWaiter:Role
     {
-        #region Data Members
+        #region Data Member
         //encapsulation
-        protected decimal salary;
+        private decimal salary;
         #endregion
 
-
-        #region Property methods
-        public decimal Salary
+        #region Property Methods
+        public decimal SalaryAmount
         {
             get { return salary; }
             set { salary = value; }
@@ -23,24 +22,21 @@ namespace GoodFoodSystem.BusinessLayer
         #endregion
 
         #region Constructor
-        public Headwaiter()
+        public HeadWaiter() : base()
         {
-            base.roleVal = RoleType.Headwaiter;
-            base.description = "Headwaiter";
+            getRoleValue = RoleType.Headwaiter;
+            description = "Headwaiter";
             salary = 0;
         }
         #endregion
 
-
         #region Methods
-
         public override decimal Payment()
         {
+            //Will be calculated when shifts are available
             return salary;
         }
-
         #endregion
-
 
     }
 }
