@@ -62,16 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\Employee.cs" />
+    <Compile Include="BusinessLayer\EmployeeController.cs" />
     <Compile Include="BusinessLayer\HeadWaiter.cs" />
     <Compile Include="BusinessLayer\Role.cs" />
     <Compile Include="BusinessLayer\Runner.cs" />
     <Compile Include="BusinessLayer\Waiter.cs" />
     <Compile Include="DatabaseLayer\DB.cs" />
-    <Compile Include="DatabaseLayer\ExmployeeDB.cs" />
-    <Compile Include="GoodFoodSystemDataSet.Designer.cs">
+    <Compile Include="DatabaseLayer\EmployeeDB.cs" />
+    <Compile Include="GoodFoodDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GoodFoodSystemDataSet.xsd</DependentUpon>
+      <DependentUpon>GoodFoodDatabaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
@@ -85,16 +86,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="GoodFoodSystemDataSet.xsc">
-      <DependentUpon>GoodFoodSystemDataSet.xsd</DependentUpon>
+    <None Include="GoodFoodDatabaseDataSet.xsc">
+      <DependentUpon>GoodFoodDatabaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="GoodFoodSystemDataSet.xsd">
+    <None Include="GoodFoodDatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GoodFoodSystemDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>GoodFoodDatabaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="GoodFoodSystemDataSet.xss">
-      <DependentUpon>GoodFoodSystemDataSet.xsd</DependentUpon>
+    <None Include="GoodFoodDatabaseDataSet.xss">
+      <DependentUpon>GoodFoodDatabaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -113,12 +114,12 @@
     <Folder Include="PresentationLayer\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GoodFoodSystem.mdf">
+    <Content Include="GoodFoodDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="GoodFoodSystem_log.ldf">
+    <Content Include="GoodFoodDatabase_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>GoodFoodSystem.mdf</DependentUpon>
+      <DependentUpon>GoodFoodDatabase.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

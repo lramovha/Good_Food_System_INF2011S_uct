@@ -24,7 +24,7 @@ namespace GoodFoodSystem.BusinessLayer
         //encapsulation
         private string empId;
         //need to define a role here - Question 3-Make sure the role data member of this class is of class type Role.
-        private Role role;
+        public Role role;
         #endregion
 
         #region Property methods
