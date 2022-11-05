@@ -1,2 +1,2 @@
 # Good_Food_System_INF2011S_uct
-A computer System for managing stuff at a restaurant chain 
+A computer System for managing stuff members at a restaurant chain 
