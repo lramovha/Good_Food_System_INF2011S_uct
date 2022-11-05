@@ -12,6 +12,7 @@ namespace GoodFoodSystem.BusinessLayer
         //encapsulation
         private decimal tips, rate;
         private int NumberOfShifts;
+        private decimal salary;
         #endregion
 
         #region Property Methods
@@ -19,6 +20,11 @@ namespace GoodFoodSystem.BusinessLayer
         {
             get { return tips; }
             set { tips = value; }
+        }
+        public decimal SalaryAmount
+        {
+            get { return salary; }
+            set { salary = value; }
         }
 
         public decimal getRate

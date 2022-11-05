@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +31,7 @@ namespace GoodFoodSystem.DatabaseLayer
             }
         }
         #endregion
-        
+
         #region Constructor
         public EmployeeDB() : base()
         {
@@ -42,7 +42,6 @@ namespace GoodFoodSystem.DatabaseLayer
             Add2Collection(table2);
             FillDataSet(sqlLocal3, table3);
             Add2Collection(table3);
-
         }
         #endregion
 
@@ -150,10 +149,6 @@ namespace GoodFoodSystem.DatabaseLayer
             {
                 case Role.RoleType.Headwaiter:
                     dataTable = table1;
-                    // aRow = dsMain.Tables[dataTable].NewRow();
-                    // FillRow(aRow, anEmp);
-                    // //Add to the dataset
-                    //dsMain.Tables[dataTable].Rows.Add(aRow);
                     break;
                 case Role.RoleType.Waiter:
                     dataTable = table2;
@@ -169,50 +164,70 @@ namespace GoodFoodSystem.DatabaseLayer
         }
         #endregion
 
-        #region Build Parameters
-
-        public void Build_INSERT_Parameters(Employee anEmp)
+        #region Build Parameters, Create Commands & Update database
+        private void Build_INSERT_Parameters(Employee anEmp)
         {
+            //Create Parameters to communicate with SQL INSERT...
+            //add the input parameter and set its properties.
             SqlParameter param = default(SqlParameter);
             param = new SqlParameter("@ID", SqlDbType.NVarChar, 15, "ID");
-            daMain.InsertCommand.Parameters.Add(param);
-            param = new SqlParameter("@EMPID", SqlDbType.NVarChar, 10, " EMPID ");
+            ////Add SqlParameter to SqlCommand....Add the parameter to the Parameters collection.
             daMain.InsertCommand.Parameters.Add(param);
 
+            param = new SqlParameter("@EMPID", SqlDbType.NVarChar, 10, "EMPID");
+            daMain.InsertCommand.Parameters.Add(param);
+
+            //Do the same for Description & answer -ensure that you choose the right size
+            param = new SqlParameter("@Name", SqlDbType.NVarChar, 100, "Name");
+            daMain.InsertCommand.Parameters.Add(param);
+
+            param = new SqlParameter("@Phone", SqlDbType.NVarChar, 15, "Phone");
+            daMain.InsertCommand.Parameters.Add(param);
+
+            param = new SqlParameter("@Role", SqlDbType.TinyInt, 1, "Role");
+            daMain.InsertCommand.Parameters.Add(param);
             switch (anEmp.role.getRoleValue)
             {
                 case Role.RoleType.Headwaiter:
                     param = new SqlParameter("@Salary", SqlDbType.Money, 8, "Salary");
                     daMain.InsertCommand.Parameters.Add(param);
                     break;
-                case Role.RoleType.Runner:
-                    param = new SqlParameter("@Salary", SqlDbType.Money, 8, "Salary");
+                case Role.RoleType.Waiter:
+
+                    param = new SqlParameter("@DayRate", SqlDbType.Money, 8, "DayRate");
+                    daMain.InsertCommand.Parameters.Add(param);
+
+                    param = new SqlParameter("@NoOfShifts", SqlDbType.SmallInt, 4, "NoOfShifts");
+                    daMain.InsertCommand.Parameters.Add(param);
+
+                    param = new SqlParameter("@Tips", SqlDbType.Money, 8, "Tips");
                     daMain.InsertCommand.Parameters.Add(param);
                     break;
-                case Role.RoleType.Waiter:
-                    param = new SqlParameter("@Salary", SqlDbType.Money, 8, "Salary");
+                case Role.RoleType.Runner:
+                    param = new SqlParameter("@DayRate", SqlDbType.Money, 8, "DayRate");
+                    daMain.InsertCommand.Parameters.Add(param);
+
+                    param = new SqlParameter("@NoOfShifts", SqlDbType.SmallInt, 4, "NoOfShifts");
                     daMain.InsertCommand.Parameters.Add(param);
                     break;
             }
+            //***https://msdn.microsoft.com/en-za/library/ms179882.aspx
         }
-        public void Create_INSERT_Command(Employee anEmp)
-        {
-            SqlParameter param = default(SqlParameter);
-            param = new SqlParameter("@ID", SqlDbType.NVarChar, 15, "ID");
-            daMain.InsertCommand.Parameters.Add(param);
-            param = new SqlParameter("@EMPID", SqlDbType.NVarChar, 10, " EMPID ");
-            daMain.InsertCommand.Parameters.Add(param);
 
+        private void Create_INSERT_Command(Employee anEmp)
+        {
+            //Create the command that must be used to insert values into the Books table..
             switch (anEmp.role.getRoleValue)
             {
                 case Role.RoleType.Headwaiter:
-                    daMain.InsertCommand = new SqlCommand("INSERT into HeadWaiter (ID, EMPID, Name,Phone, Role, Salary) VALUES(@ID, @EmpID, @Name, @Phone, @Role, @Salary)", cnMain);
-                    break;
-                case Role.RoleType.Runner:
-                    daMain.InsertCommand = new SqlCommand("INSERT into Runner (ID, EMPID, Name, Phone, Role, Salary) VALUES(@ID, @EmpID, @Name, @Phone, @Role, @Salary)", cnMain);
+                    daMain.InsertCommand = new SqlCommand("INSERT into HeadWaiter (ID, EMPID, Name, Phone, Role, Salary) VALUES (@ID, @EmpID, @Name, @Phone, @Role, @Salary)", cnMain);
                     break;
                 case Role.RoleType.Waiter:
-                    daMain.InsertCommand = new SqlCommand("INSERT into Waiter (ID, EMPID, Name, Phone, Role, Salary) VALUES(@ID, @EmpID, @Name, @Phone, @Role, @Salary)", cnMain);
+                    //daMain.InsertCommand = new SqlCommand("INSERT into Waiter (ID, EMPID, Name, Phone, Role, Tips, DayRate, NoOfShifts) VALUES (@ID, @EmpID, @Name, @Phone, @Role, @Tips, @DayRate, @NoOfShifts)", cnMain);
+                    daMain.InsertCommand = new SqlCommand("INSERT into Waiter (ID, EMPID, Name, Phone, Role, DayRate, NoOfShifts,Tips) VALUES (@ID, @EmpID, @Name, @Phone, @Role, @DayRate, @NoOfShifts, @Tips)", cnMain);
+                    break;
+                case Role.RoleType.Runner:
+                    daMain.InsertCommand = new SqlCommand("INSERT into Runner (ID, EMPID, Name, Phone, Role, DayRate, NoOfShifts) VALUES (@ID, @EmpID, @Name, @Phone, @Role, @DayRate, @NoOfShifts)", cnMain);
                     break;
             }
             Build_INSERT_Parameters(anEmp);
@@ -221,26 +236,22 @@ namespace GoodFoodSystem.DatabaseLayer
         public bool UpdateDataSource(Employee anEmp)
         {
             bool success = true;
-
             Create_INSERT_Command(anEmp);
-            switch (anEmp.role.getRoleValue) 
+            switch (anEmp.role.getRoleValue)
             {
                 case Role.RoleType.Headwaiter:
-                    success = UpdateDataSource(anEmp);
-                case Role.RoleType.Runner:
-                    success = UpdateDataSource(anEmp);
+                    success = UpdateDataSource(sqlLocal1, table1);
+                    break;
                 case Role.RoleType.Waiter:
-                    success = UpdateDataSource(anEmp);
+                    success = UpdateDataSource(sqlLocal2, table2);
+                    break;
+                case Role.RoleType.Runner:
+                    success = UpdateDataSource(sqlLocal3, table3);
+                    break;
             }
-
+            return success;
         }
-       
-        #endregion
 
-        #region Create Commands
-        #endregion
-
-        #region Update database
         #endregion
 
     }

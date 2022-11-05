@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,7 +72,7 @@ namespace GoodFoodSystem.DatabaseLayer
         #endregion
 
         #region Constructor
-        
+
         public DB()
         {
             try
@@ -88,10 +88,6 @@ namespace GoodFoodSystem.DatabaseLayer
             }
         }
         #endregion
-
-        
-
-        #region Update the DateSet
 
         #region Fills dataset fresh from the db for a specific table and with a specific Query        
         public void FillDataSet(string aSQLstring, string aTable)
@@ -116,7 +112,6 @@ namespace GoodFoodSystem.DatabaseLayer
         }
         #endregion
 
-        #endregion
 
         #region Update the data source 
 
@@ -161,6 +156,5 @@ namespace GoodFoodSystem.DatabaseLayer
         }
         #endregion
 
-        
     }
 }
